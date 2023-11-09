@@ -1,0 +1,25 @@
+  .center-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    text-align: center;
+  }
+
+  .center-textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    text-align: center;
+  }
+  .bold-label {
+    font-weight: bold;
+  }
+  
+  
+  
+
+  
