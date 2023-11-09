@@ -10,6 +10,7 @@ import { DoctoresComponent } from './doctores/doctores.component';
 import { MedicamentosComponent } from './medicamentos/medicamentos.component';
 import { ControlRecetasCitasComponent } from './control-recetas-citas/control-recetas-citas.component';
 import { ControlExamenesMedicosComponent } from './control-examenes-medicos/control-examenes-medicos.component';
+import { IngresoModule } from './ingreso/ingreso.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ControlExamenesMedicosComponent } from './control-examenes-medicos/cont
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    IngresoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
