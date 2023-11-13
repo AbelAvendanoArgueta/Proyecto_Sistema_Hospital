@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MenuPrincipalModule } from '../menu-principal/menu-principal.module';
+
+import { IngresoRoutingModule } from './ingreso-routing.module';
+
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    MenuPrincipalModule
+    IngresoRoutingModule
   ]
 })
 export class IngresoModule { }
