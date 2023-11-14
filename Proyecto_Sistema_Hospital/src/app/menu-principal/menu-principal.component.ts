@@ -12,4 +12,8 @@ export class MenuPrincipalComponent {
   irAControlRecetas() {
     this.router.navigate(['/control-recetas-citas']);
   }
+
+  irAControlExamenes() {
+    this.router.navigate(['/control-examenes-medicos']);
+  }
 }
