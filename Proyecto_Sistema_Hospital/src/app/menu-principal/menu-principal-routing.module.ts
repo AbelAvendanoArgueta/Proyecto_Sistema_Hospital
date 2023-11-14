@@ -5,6 +5,7 @@ import { MenuPrincipalComponent } from './menu-principal.component';
 
 const routes: Routes = [
   { path: 'menu-principal', component: MenuPrincipalComponent },
+  { path: '', redirectTo: '/menu-principal', pathMatch: 'full' }
 ];
 
 @NgModule({

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu-principal',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu-principal.component.css']
 })
 export class MenuPrincipalComponent {
+  constructor(private router: Router) {}
 
+  irAControlRecetas() {
+    this.router.navigate(['/control-recetas-citas']);
+  }
 }
