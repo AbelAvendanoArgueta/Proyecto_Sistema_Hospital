@@ -16,4 +16,16 @@ export class MenuPrincipalComponent {
   irAControlExamenes() {
     this.router.navigate(['/control-examenes-medicos']);
   }
+
+  irADoctores() {
+    this.router.navigate(['/doctores']);
+  }
+
+  irAMedicamentos() {
+    this.router.navigate(['/medicamentos']);
+  }
+
+  irAPacientes() {
+    this.router.navigate(['/paciente']);
+  }
 }

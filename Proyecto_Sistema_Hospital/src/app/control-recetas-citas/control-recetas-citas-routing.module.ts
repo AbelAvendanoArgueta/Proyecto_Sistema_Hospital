@@ -4,6 +4,7 @@ import { ControlRecetasCitasComponent } from './control-recetas-citas.component'
 
 const routes: Routes = [
   { path: 'control-recetas-citas', component: ControlRecetasCitasComponent },
+  { path: '', redirectTo: '/control-recetas-citas', pathMatch: 'full' }
 ];
 
 @NgModule({

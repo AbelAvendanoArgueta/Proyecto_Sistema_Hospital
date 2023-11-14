@@ -4,6 +4,7 @@ import { ControlExamenesMedicosComponent } from './control-examenes-medicos.comp
 
 const routes: Routes = [
   { path: 'control-examenes-medicos', component: ControlExamenesMedicosComponent },
+  { path: '', redirectTo: '/control-examenes-medicos', pathMatch: 'full' }
 ];
 
 @NgModule({
