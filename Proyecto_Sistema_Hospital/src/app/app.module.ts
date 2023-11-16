@@ -21,7 +21,7 @@ import { IngresoModule } from './ingreso/ingreso.module';
     DoctoresComponent,
     MedicamentosComponent,
     ControlRecetasCitasComponent,
-    ControlExamenesMedicosComponent
+    ControlExamenesMedicosComponent,
   ],
   imports: [
     BrowserModule,
