@@ -35,3 +35,48 @@
           </nav>
       </nav>  
 </div>
+
+<!-- Fin de navbar -->
+  
+      <!-- Inicio de interfaz -->
+
+<h1 class="centrado-title"><span class="badge-title">Control Recetas y Citas <img src="https://cdn-icons-png.flaticon.com/128/3595/3595970.png" alt="Imagen"></span></h1>
+
+<div class="container">
+  <form class="d-flex search-bar" role="search">
+    <span class="input-group-text receta-text">Ingrese No. Receta</span>
+    <input class="form-control me-2 search-input" type="search" placeholder="Buscar # receta" aria-label="Buscar">
+    <button class="btn btn-info btn-search" type="submit">Buscar</button>
+  </form>
+  <div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-secondary btn-crear-nueva">Crear Nueva</button>
+  </div>
+  <div class="btn-alert-popup alert alert-danger" role="alert">
+    Receta no encontrada!
+  </div>
+  <form class="d-flex search-bar" role="search">
+    <input class="form-control me-2 search-input" type="search" placeholder="Buscar medicamentos" aria-label="Buscar">
+    <input class="form-control me-2 search-input ingresar-cantidad-textbox" type="search" placeholder="Ingresar cantidad" aria-label="Buscar">
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-primary btn-info">Buscar</button>
+      <button type="button" class="btn btn-primary btn-success">Añadir</button>
+    </div>
+    <h6 class="text-disponibilidad">Disponibilidad: </h6>
+    <span class="badge bg-dark text-number-disponibilidad">20</span>
+  </form>
+  <form class="d-flex search-bar margin-top-div" role="search">
+    <input class="form-control me-2 search-input" type="search" placeholder="Agregar comentario para la citación" aria-label="Buscar">
+      <button type="button" class="btn btn-primary btn-success">Añadir</button>
+  </form>
+  <form class="d-flex search-bar margin-top-div" role="search">
+    <input class="form-control me-2 search-input" type="search" placeholder="Buscar doctor o especialista" aria-label="Buscar">
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-primary btn-info">Buscar</button>
+      <button type="button" class="btn btn-primary btn-success">Añadir</button>
+    </div>
+  </form>
+  <div class="btn-alert-popup alert alert-info margin-top-div" role="alert">
+    Doctor encontrado!
+  </div>
+</div>
+

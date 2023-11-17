@@ -1,0 +1,67 @@
+.badge-title {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007bff; /* Puedes cambiar el color de fondo según tus preferencias */
+    color: #fff; /* Puedes cambiar el color del texto según tus preferencias */
+    border-radius: 5px;
+  }
+
+.centrado-title {
+    margin-top: 1.5%;
+    text-align: center; /* Ajusta el margen superior según sea necesario */
+  }
+
+.centrado-title img {
+width: 50px;
+height: auto; /* Esto mantiene la proporción original de la imagen */
+margin-left: 10px; /* Puedes ajustar el margen según tus necesidades */
+}
+
+.receta-text {
+    background-color: #ffca2c; /* Color personalizado */
+    color: #000000; /* Color del texto en la caja */
+    padding: 5px; /* Ajusta el relleno según sea necesario */
+    border-radius: 5px; /* Ajusta el radio del borde según sea necesario */
+  }
+
+.btn-search {
+  padding: 5px;
+  border-radius: 5px;
+  width: 125px;
+}
+
+.btn-crear-nueva {
+  margin-top: 1%; /* Ajusta el margen superior según tus preferencias */
+  padding: 5px;
+  border-radius: 5px; 
+}
+
+.btn-alert-popup {
+  margin-top: 3px; /* Ajusta el margen superior según tus preferencias */
+  padding: 5px;
+  border-radius: 5px;
+  width: 33%; 
+  text-size-adjust: 35;
+}
+
+.ingresar-cantidad-textbox{
+  width: 27%;
+}
+
+.text-disponibilidad {
+  margin-top: 1%;
+  margin-left: 2%;
+}
+
+.text-number-disponibilidad {
+  margin-left: 1%;
+  width: 125px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 27px;
+  color:#fff;
+}
+
+.margin-top-div {
+  margin-top: 1%; /* Ajusta el margen superior según tus preferencias */ 
+}
