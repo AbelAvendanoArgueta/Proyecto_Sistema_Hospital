@@ -35,3 +35,50 @@
           </nav>
       </nav>  
 </div>
+
+<!-- Fin de navbar -->
+  
+      <!-- Inicio de interfaz -->
+
+      <h1 class="centrado-title"><span class="badge-title">Control de medicamentos <img src="https://cdn-icons-png.flaticon.com/128/3595/3595970.png" alt="Imagen"></span></h1>
+
+      <div class="container">
+        <form class="d-flex search-bar" role="search">
+          <span class="input-group-text doctor-text">Ingrese codigo de medicamento</span>
+          <input class="form-control me-2 search-input" type="search" placeholder="Medicamento" aria-label="Buscar">
+          <button onclick="mostrarPopup"  class="btn btn-info btn-search" type="submit">Buscar</button>
+            <div id="popup" class="popup">
+              <button onclick="cerrarPopup()">Cerrar</button>
+            </div>
+          <script>
+            // Funciones para mostrar y cerrar el popup
+            function mostrarPopup() {
+              document.getElementById("overlay").style.display = "flex";
+              document.getElementById("popup").style.display = "block";
+            }
+        
+            function cerrarPopup() {
+              document.getElementById("overlay").style.display = "none";
+              document.getElementById("popup").style.display = "none";
+            }
+          </script>
+        </form>
+        <div class="btn-alert-popup alert alert-danger" role="alert">
+          Medicamento no encontrado!
+        </div>
+        <form class="d-flex search-bar" role="text">
+          <input class="form-control me-2 search-input" type="text" placeholder="Nombre del medicamento" aria-label="Buscar">
+          <input class="form-control me-2 search-input ingresar-cantidad-textbox" type="text" placeholder="Cantidad">
+          <div class="btn-group" role="group" aria-label="Basic example">
+          </div>
+        </form>
+        <form class="d-flex search-bar margin-top-div" role="text">
+          <input class="form-control me-2 search-input" type="text" placeholder="Funcionalidad" aria-label="Buscar">
+          <input class="form-control me-2 search-input" type="text" placeholder="Colocar codigo del medicamento">
+        <div class="btn-alert-popup alert alert-info margin-top-div" role="alert">
+          Medicamento encontrado!
+        </div>
+        <div class="d-flex justify-content-end">
+          <button type="button" class="btn btn-secondary btn-crear-nueva">Crear</button>
+          <button type="button" class="btn btn-secondary btn-actualizar">Actualizar</button>
+      </div>
