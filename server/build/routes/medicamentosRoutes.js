@@ -8,7 +8,11 @@ class MedicamentosRoutes {
         this.config();
     }
     config() {
-        this.router.get('/', medicamentosController_1.medicamentosController.index);
+        this.router.get('/', medicamentosController_1.medicamentosController.list);
+        this.router.get('/:id', medicamentosController_1.medicamentosController.list_unique);
+        this.router.post('/', medicamentosController_1.medicamentosController.create);
+        this.router.put('/:id', medicamentosController_1.medicamentosController.update);
+        this.router.delete('/:id', medicamentosController_1.medicamentosController.delete);
     }
 }
 const medicamentosRoutes = new MedicamentosRoutes();

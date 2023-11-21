@@ -1,24 +1,13 @@
-import mysql, { Pool, MysqlError } from 'promise-mysql';
+import mysql from 'mysql2';
+
 import keys from './keys';
 
-let pool: Pool; // Inicializado con un valor indefinido
+const pool = mysql.createPool(keys.database);
 
-mysql.createPool(keys.database)
-    .then((p: Pool) => {
-        pool = p;
-        return pool.getConnection();
-    })
-    .then((connection: mysql.PoolConnection) => {
-        // Realiza tus operaciones aquí usando la conexión
-        // Por ejemplo, ejecutar consultas, etc.
+pool.getConnection(function(err,conn){
+    console.log('DB is conected')
+// Connection is automatically released when query resolves
+});
 
-        // Luego, libera la conexión usando la función `release`
-        connection.release();
-
-        console.log('DB is connected');
-    })
-    .catch((error: MysqlError) => {
-        console.error('Error connecting to the database:', error);
-    });
 
 export default pool;
