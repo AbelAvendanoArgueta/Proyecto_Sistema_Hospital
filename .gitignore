@@ -40,3 +40,15 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Ignore directories and their contents anywhere in the tree
+**/dist/
+**/tmp/
+**/out-tsc/
+**/bazel-out/
+**/node_modules/
+**/.angular/cache/
+**/.sass-cache/
+**/.history/
+**/.vscode/
+**/.history/
