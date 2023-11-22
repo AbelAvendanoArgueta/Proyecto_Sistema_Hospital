@@ -36,11 +36,6 @@
       </nav>  
 </div>
 
-<form class="d-flex" role="search" style="width: 30%; margin-top: 2%;">
-  <input class="form-control me-2" type="search" placeholder="Ingrese No. Receta" aria-label="Search">
-  <button class="btn btn-outline-success" type="submit">Buscar</button>
-</form>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -53,36 +48,40 @@
     /* Agrega estilos CSS según sea necesario */
   </style>
 </head>
-<body onload="limpiarTabla()">
+<body>
+  <form class="d-flex" role="search" style="width: 30%; margin-top: 2%;">
+    <input class="form-control me-2" type="search" placeholder="Ingrese No. Receta" aria-label="Search" id="searchInput">
+    <button class="btn btn-outline-success" type="button">Buscar</button>
+  </form>
 
   <form class="d-flex" role="search" style="width: 80%; margin-top: 2%;">
     <div style="width: 33%;">
-      <label for="receta">No. de receta:</label>
-      <span id="recetaText"></span>
+      <label>No. de receta:</label>
+      <input class="form-control" type="text" id="recetaText" readonly>
     </div>
     <div style="width: 33%;">
-      <label for="fecha">Fecha:</label>
-      <span id="fechaText"></span>
+      <label>Fecha:</label>
+      <input class="form-control" type="text" id="fechaText" readonly>
     </div>
   </form>
   <form class="d-flex" role="search" style="width: 80%; margin-top: 2%;">
     <div style="width: 100%;">
-      <label for="doctor">Doctor:</label>
-      <span id="doctorText"></span>
+      <label>Doctor:</label>
+      <input class="form-control" type="text" id="doctorText" readonly>
     </div>
     <br>
     <br>
     <div style="width: 100%;">
-      <label for="nombrePaciente">Nombre del paciente:</label>
-      <span id="nombrePacienteText"></span>
+      <label>Nombre del paciente:</label>
+      <input class="form-control" type="text" id="nombrePacienteText" readonly>
     </div>
     <div style="width: 35%;">
-      <label for="edad">Edad:</label>
-      <span id="edadText"></span>
+      <label>Edad:</label>
+      <input class="form-control" type="text" id="edadText" readonly>
     </div>
     <div style="width: 35%;">
-      <label for="sexo">Sexo:</label>
-      <span id="sexoText"></span>
+      <label>Sexo:</label>
+      <input class="form-control" type="text" id="sexoText" readonly>
     </div>
   </form>
 
@@ -100,58 +99,13 @@
   </table>
 
   <div style="width: 80%; margin-top: 20px;">
-    <label for="detalleExamen">Detalle del Examen:</label>
-    <span id="detalleExamenText"></span>
+    <label>Detalle del Examen:</label>
+    <textarea class="form-control" id="detalleExamenText" rows="3" readonly></textarea>
   </div>
 
   <div style="width: 80%; margin-top: 20px;">
-    <label for="fechaProximaCita">Fecha para la Próxima Cita:</label>
-    <span id="fechaProximaCitaText"></span>
+    <label>Fecha para la Próxima Cita:</label>
+    <input class="form-control" type="text" id="fechaProximaCitaText" readonly>
   </div>
-
-  <!-- Agrega los enlaces a Bootstrap si estás utilizando este framework -->
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
-  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
-
-  <script>
-    function limpiarTabla() {
-      // Limpia la tabla
-      document.getElementById('dataTable').getElementsByTagName('tbody')[0].innerHTML = '';
-    }
-
-    function buscar() {
-
-      // Puedes agregar lógica aquí para buscar los datos según el número de receta ingresado
-
-      // Ejemplo: datos de prueba
-      var medicamentos = [
-        { nombre: 'Medicamento 1', cantidad: '1 comprimido' },
-        { nombre: 'Medicamento 2', cantidad: '2 comprimidos' },
-        // Agrega más medicamentos según sea necesario
-      ];
-
-      // Agrega filas y celdas a la tabla con los datos de los medicamentos
-      medicamentos.forEach(function (medicamento) {
-        var row = document.getElementById('dataTable').insertRow();
-        var cell1 = row.insertCell(0);
-        var cell2 = row.insertCell(1);
-
-        // Asigna los valores de las columnas
-        cell1.innerHTML = medicamento.nombre;
-        cell2.innerHTML = medicamento.cantidad;
-      });
-
-      // Actualiza los datos de los campos de texto
-      document.getElementById('recetaText').innerText = "12345"; // Ejemplo de valor
-      document.getElementById('fechaText').innerText = "2023-11-15"; // Ejemplo de valor
-      document.getElementById('doctorText').innerText = "Dr. Juan Pérez"; // Ejemplo de valor
-      document.getElementById('nombrePacienteText').innerText = "Maria García"; // Ejemplo de valor
-      document.getElementById('edadText').innerText = "30"; // Ejemplo de valor
-      document.getElementById('sexoText').innerText = "Femenino"; // Ejemplo de valor
-      document.getElementById('detalleExamenText').innerText = "Examen de rutina"; // Ejemplo de valor
-      document.getElementById('fechaProximaCitaText').innerText = "2023-12-01"; // Ejemplo de valor
-    }
-  </script>
-
 </body>
-</html>
+  
